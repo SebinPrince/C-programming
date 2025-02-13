@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+int i,j,n,a[50],key=0,freq=0;
+printf("enter the limit:");
+scanf("%d",&n);
+printf("array elements are:");
+for(i=0;i<n;i++)
+{
+    scanf("%d",&a[i]);
+}
+printf("array elements are:");
+for(i=0;i<n;i++)
+{
+    printf("%d\t",a[i]);
+}
+printf("\nEnter a key:");
+scanf("%d",&key);
+for(i=0;i<n;i++)
+{
+    if(key==a[i])
+    {
+        freq=freq+1;
+    }
+}
+if (freq==0)
+{
+    printf("This value is not in this array");
+}
+else
+{
+    printf("The freq is %d",freq);
+}
+    return 0;
+}
