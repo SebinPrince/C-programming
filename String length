@@ -1,0 +1,14 @@
+//Program to print string and find string length?
+#include <stdio.h>
+#include<string.h>
+
+int main() {
+char a[50];
+int n;
+printf("Enter your name:");
+scanf("%s",a);
+printf("Name is %s\n",a);
+n=strlen(a);
+printf("Length is %d",n);
+    return 0;
+}
