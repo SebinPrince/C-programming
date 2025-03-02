@@ -1,0 +1,22 @@
+//Sum and avg of natural numbers
+#include <stdio.h>
+
+int main() {
+int i=1,n,j,sum=0,avg;
+printf("Enter the limit:");
+scanf("%d",&n);
+while(i<=n)
+{
+    printf("%d\n",i);
+   // i++;
+    sum=sum+i;
+    i++;
+    //printf("sum=%d",sum);
+}
+printf("sum=%d\n",sum);
+avg=sum/i;
+printf("avg=%d",avg);
+
+
+    return 0;
+}
