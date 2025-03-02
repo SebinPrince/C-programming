@@ -1,0 +1,15 @@
+//Sum of even number
+#include <stdio.h>
+int main() {
+int a,b,sum=0;
+printf("Enter a limit:");
+scanf("%d",&a);
+for(b=2;b<=a;b=b+2)
+{
+    printf("%d\n",b);
+    sum=sum+b;
+}
+printf("Sum is %d",sum);
+
+    return 0;
+}
