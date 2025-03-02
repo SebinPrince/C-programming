@@ -1,0 +1,26 @@
+//Amstrong number
+#include <stdio.h>
+
+int main() {
+int a,b,c,d,sum=0;
+printf("Enter a number:");
+scanf("%d",&a);
+d=a;
+while(a>0)
+{
+    b=a%10;
+    c=b*b*b;
+    sum=sum+c;
+    a=a/10;
+}
+if (sum==d)
+{
+    printf("Armstrong");
+}
+else
+{
+    printf("Not Armstrong");
+}
+
+    return 0;
+}
