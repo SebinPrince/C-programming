@@ -1,0 +1,13 @@
+//Factorial of a number
+#include <stdio.h>
+int main() {
+int a,b,c=1;
+printf("Enter a limit:");
+scanf("%d",&a);
+for(b=1;b<=a;b++)
+{
+    c=c*b;
+}
+printf("Factorial is %d",c);
+    return 0;
+}
