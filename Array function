@@ -1,0 +1,28 @@
+//Program to read and display the elements of an array using function.
+#include <stdio.h>
+void readarray(int a[],int n)
+{
+    int i;
+    printf("Enter the array elements:");
+    for(i=0;i<n;i++)
+{
+    scanf("%d",&a[i]);
+}
+}
+void printarray(int a[],int n)
+{
+    int i;
+    printf("Array elements are:");
+    for(i=0;i<n;i++)
+{
+    printf("%d\t",a[i]);
+}
+}
+int main() {
+int i,a[50],n;
+printf("Enter the array size:");
+scanf("%d",&n);
+readarray(a,n);
+printarray(a,n);
+    return 0;
+}
