@@ -1,0 +1,35 @@
+// Program to check whether a given string is palindrome.Using user defined functions
+
+#include <stdio.h>
+int reversenum(int a)
+{
+int b,reverse=0;
+while(a>0)
+{
+    b=a%10;
+    reverse=reverse*10+b;
+    a=a/10;
+}
+return reverse;
+}
+void palindrome(int reverse,int c)
+{
+if(reverse==c)
+{
+    printf("Palindrome");
+}
+else
+{
+    printf("Not palindrome");
+}
+}
+int main() {
+int a,b,c,reverse=0;
+printf("Enter a number:");
+scanf("%d",&a);
+c=a;
+reverse=reversenum(a);
+palindrome(reverse,c);
+
+    return 0;
+}
