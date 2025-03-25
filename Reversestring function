@@ -1,0 +1,25 @@
+// Reverse a string using function
+#include <stdio.h>
+void reversestring(char str[100])
+{
+    char temp;
+    int length,i,j;
+    for(length=0;str[length]!='\0';length++)
+    i=length-1;
+for(j=0;j<length/2;j++)
+{
+    temp=str[i];
+    str[i]=str[j];
+    str[j]=temp;
+    i--;
+}
+}
+int main() {
+char str[100],temp;
+int length,i,j;
+printf("Enter a string:");
+scanf("%[^\n]",str);
+reversestring(str);
+printf("Reversed string is:%s",str);
+    return 0;
+}
