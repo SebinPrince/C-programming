@@ -1,0 +1,38 @@
+// Write a program to print two person details using structure.
+#include <stdio.h>
+#include<string.h>
+struct p
+{
+    char name[50];
+    int age;
+    float height;
+};
+int main()
+{
+    struct p person1,person2;
+
+    printf("Enter the name:");
+    scanf("%s",&person1.name);
+    printf("Enter the age:");
+    scanf("%d",&person1.age);
+    printf("Enter the height:");
+    scanf("%f",&person1.height);
+    
+    printf("\nFirst person deatails:\n");
+    printf("Name=%s\n",person1.name);
+    printf("Age=%d\n",person1.age);
+    printf("Height=%f\n",person1.height);
+    
+    printf("\nEnter the name:");
+    scanf("%s",&person2.name);
+    printf("Enter the age:");
+    scanf("%d",&person2.age);
+    printf("Enter the height:");
+    scanf("%f",&person2.height);
+    
+    printf("\nSecond person deatails:\n");
+    printf("Name=%s\n",person2.name);
+    printf("Age=%d\n",person2.age);
+    printf("Height=%f",person2.height);
+    return 0;
+}
