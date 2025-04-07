@@ -1,0 +1,35 @@
+// Write a program to demonstrate the difference between a structure and a union by defining  both and observing memory allocation using c programing
+#include <stdio.h>
+#include<string.h>
+struct studentstruct{
+    char name[50];
+    int id;
+    float marks;
+};
+union studentunion{
+    char name[52];
+    int id;
+    float marks;
+};
+int main(){
+    struct studentstruct s1;
+    union studentunion u1;
+    printf("Struct size:%lu bytes\n",sizeof(s1));
+    printf("union size:%lu bytes\n",sizeof(u1));
+    printf("\nStructure values:\n");
+    s1.id=1;
+    s1.marks=56.3;
+    strcpy(s1.name,"Alice");
+    printf("Name:%s\n",s1.name);
+    printf("Marks:%f\n",s1.marks);
+    printf("ID:%d\n",s1.id);
+    
+    printf("\nUnion values:\n");
+    u1.id=2;
+    printf("ID:%d\n",u1.id);
+    u1.marks=59.8;
+    printf("Marks:%f\n",u1.marks);
+    strcpy(u1.name,"Sebin");
+    printf("Name:%s",u1.name);
+    return 0;
+}
