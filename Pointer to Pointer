@@ -1,0 +1,11 @@
+//Develop a program to  demonstrate  pointer to pointer funtionality by manipulating and displaying values of multiple pointer using c programming
+#include<stdio.h>
+int main()
+{
+    int a=30,*p,**q;
+    p=&a;
+    q=&p;
+    printf("value of A is %d\n",a);
+    printf("Value of *P is %d\n",*p);
+    printf("Value of **Q is %d",**q);
+}
