@@ -1,0 +1,18 @@
+// Program to calculate the area of circle and cylinder using macros.
+#include <stdio.h>
+#define pi 3.14
+#define area_of_circle(r) (pi*r*r)
+#define area_of_cylinder(r,h) (2*pi*r*(r+h))
+int main()
+{
+    float r,h,area,surface_area;
+    printf("Enter the radius of circle and cylinder:");
+    scanf("%f",&r);
+    printf("Enter the height of cylinder:");
+    scanf("%f",&h);
+    area=area_of_circle(r);
+    surface_area=area_of_cylinder(r,h);
+    printf("Area of circle:%2f\n",area);
+    printf("Area of cylinder:%2f",surface_area);
+    return 0;
+}
