@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main() {
+    char str[100];
+    printf("Enter a string:");
+    scanf("%[^\n]",str);
+    int count=0,inword=0;
+    for(int i=0;str[i]!='\0';i++)
+    {
+        if(str[i]!=' '&&str[i]!='\n'&&str[i]!='\t')
+        {
+            if(inword==0)
+            {
+                count++;
+                inword=1;
+            }
+        }
+        else
+        {
+            inword=0;
+        }
+    }
+     
+    printf("%d is the number in this sentence",count);
+    return 0;
+}
